@@ -13,14 +13,21 @@ These are the notes from a meeting with the frontend developer that describe wha
 - test: npm run test
 
 ###.env file
+
 POSTGRES_HOST=localhost
+
 POSTGRES_DB=store
+
 POSTGRES_TEST_DB=store_test
+
 POSTGRES_USER=postgres
+
 POSTGRES_PASSWORD=yourpassword
+
 ENV=dev
 
 BCRYPT_PASSWORD=my_sercret_password
+
 SALT_ROUNDS=10
 
 TOKEN_SECRET=mohamedhelmymahmoud123
