@@ -10,48 +10,48 @@ These are the notes from a meeting with the frontend developer that describe wha
 #### Products
 
 - Index
-  -'/api/products' (get)
+  - '/api/products' (get)
+  
 - Show
-  -'/api/products/:productId (get)
+  - '/api/products/:productId (get)
 
 - Create [token required]
-  -'/api/products' (post)
-  -request.body Ex.
-  {
-  "name": "product 60",
-  "price": 60.99,
-  "category": "category1"
-  }
+  - '/api/products' (post)
+  - request.body Ex.
+    - {
+      "name": "product 60",
+      "price": 60.99,
+      "category": "category1"
+      }
+      
 - [OPTIONAL] Top 5 most popular products
-  -'/api/products/popular?limit=5 (get)
+  - '/api/products/popular?limit=5 (get)
 
 - [OPTIONAL] Products by category (args: product category)
-  -'/api/products?category=cat1'
+  - '/api/products?category=cat1'
 
 - Update [token required]
-  -'/api/ptoducts/:productId' (put)
+  - '/api/ptoducts/:productId' (put)
   - request.body Ex.
-    {
-    "name": "product 60",
-    "price": 60.99,
-    "category": "category1"
-    }
+    - {
+      "name": "product 60",
+      "price": 60.99,
+      "category": "category1"
+      }
 
--Delete [token required]
-
-- '/api/products/:productId' (delete)
+- Delete [token required]
+  - '/api/products/:productId' (delete)
 
 #### Users
 
 - Index [token required]
-  -'/api/users' (get) (authenticate)
+  - '/api/users' (get) (authenticate)
 
 - Show [token required]
-  -'/api/users/:userId' (get) (autherization)
+  - '/api/users/:userId' (get) (autherization)
 
 - Create N[token required] (generate jwt token)
-  -'/api/users' (post)
-
+  - '/api/users' (post)
   - request.body Ex.
     {
     "username": "mohelmy",
@@ -61,7 +61,7 @@ These are the notes from a meeting with the frontend developer that describe wha
     }
 
 - Auth (generate jwt token)
-  -'/api/users/auth' (post)
+  - '/api/users/auth' (post)
   - request.body Ex.
     {
     "username": "mohelmy",
@@ -71,13 +71,13 @@ These are the notes from a meeting with the frontend developer that describe wha
 #### Orders
 
 - Current Order by user (args: user id)[token required]
-  -'/api/users/:userId/orders' (get)
+  - '/api/users/:userId/orders' (get)
 
 - Current Products by order id (args: user id, order id)[token required]
-  -'/api/users/:userId/orders/:orderId' (get)
+  - '/api/users/:userId/orders/:orderId' (get)
 
 - [OPTIONAL] Completed Orders by user (args: user id)[token required]
-  -'/api/users/:userId/orders?status=complete' (get)
+  - '/api/users/:userId/orders?status=complete' (get)
 
 ## Data Shapes
 
