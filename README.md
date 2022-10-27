@@ -73,20 +73,20 @@ TOKEN_SECRET=mohamedhelmymahmoud123
 - Create N[token required] (generate jwt token)
   - '/api/users' (post)
   - request.body Ex.
-    {
-    "username": "mohelmy",
-    "firstname": "mo",
-    "lastname": "diab",
-    "password": "1234"
-    }
+    - {
+      "username": "mohelmy",
+      "firstname": "mo",
+      "lastname": "diab",
+      "password": "1234"
+      }
 
 - Auth (generate jwt token)
   - '/api/users/auth' (post)
   - request.body Ex.
-    {
-    "username": "mohelmy",
-    "password": "1234"
-    }
+    - {
+      "username": "mohelmy",
+      "password": "1234"
+      }
 
 #### Orders
 
